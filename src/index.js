@@ -1,13 +1,18 @@
 import _ from 'lodash';
 import './style.css';
-import 'bootstrap';
-import Icon from './'
+import Icon from './webpack.png';
+import Data from './data.xml';
+import Report from  './report.json';
 
 function component(){
     const element = document.createElement('div');
     element.innerHTML = _.join(['Hello', 'webpack', '']);
     element.classList.add(['hello', 'jumbotron']);
-  
+
+    const myIcon = new Image();
+    myIcon.src = Icon;
+    element.appendChild(myIcon);
+    console.log(Report);
     return element;
 }
 
