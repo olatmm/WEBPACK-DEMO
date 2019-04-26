@@ -12,6 +12,7 @@ function component(){
     const myIcon = new Image();
     myIcon.src = Icon;
     element.appendChild(myIcon);
+    console.log(Data);
     console.log(Report);
     return element;
 }
