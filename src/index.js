@@ -7,7 +7,7 @@ import Report from  './report.json';
 function component(){
     const element = document.createElement('div');
     element.innerHTML = _.join(['Hello', 'webpack', '']);
-    element.classList.add(['hello', 'jumbotron']);
+    
 
     const myIcon = new Image();
     myIcon.src = Icon;
